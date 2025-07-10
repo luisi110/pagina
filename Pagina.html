@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Silla de Miraflores</title>
+    <link rel="stylesheet" href="Pagina.css">
+    <link rel="icon" href="images/Escudo_de_Armas_de_Venezuela_2006.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu">
+            <a href="#" class="logo">
+                <span class="venezuela-yellow">La Silla</span>
+                <span class="venezuela-blue">de</span>
+                <span class="venezuela-red">Miraflores</span>
+            </a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#venezuela-historia">Inicio</a></li>
+                    <li><a href="#elige-conocer">Conoce</a></li>
+                    <li><a href="#carrusel">Carrusel</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Conoce todos los <span> presidentes</span> de Venezuela</h1>
+                <p>Espacio interactivo donde podras aprender un poco mas sobre la historia de nuestro pais, mas
+                   en concreto sobre los presidentes que ha tenido Venezuela a lo largo de su historia, aqui
+                   encontraras contenido variado sobre el tema donde habran, biografias, datos curiosos, informacion
+                   relevante sobre el tema y mucho mas.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <section class="about container" id="venezuela-historia">
+        <div class="about-img">
+            <img src="images/b1.jpg" alt="">
+            <img src="images/b2.jpg" alt="">
+        </div>
+        <div class="about-txt">
+            <h2>
+                <span style="color: #FFD600;">Venezuela</span>
+                <span style="color: #1976D2;">rica en</span>
+                <span style="color: #D32F2F;">historia</span>
+            </h2>
+            <p>
+                Venezuela, a lo largo de su historia, ha sido dirigida por líderes cuyos mandatos han marcado el rumbo político, 
+                económico y social del país. Desde los primeros años de la República en el siglo XIX hasta la actualidad, 
+                cada presidente ha dejado un legado con obras, reformas y, en muchos casos, profundas controversias. Esta página 
+                web busca explorar la vida, los logros y los desafíos de todos los gobernantes venezolanos, ofreciendo un recorrido 
+                cronológico, datos clave y análisis históricos para entender cómo sus decisiones han dado forma a la nación. Bienvenidos 
+                a un viaje por la historia presidencial de Venezuela.
+            </p>
+        </div>
+    </section>
+
+    <main class="products container">
+        <h2 id="elige-conocer">Elige <span>conocer</span>...</h2>
+        <div class="products-content">
+            <!-- Primer elemento: texto a la derecha -->
+            <div class="product-row">
+                <img src="images/1.jpg" alt="Personajes históricos">
+                <div class="product-txt">
+                    <h3 class="titulo-amarillo">Miembros del "Primer Triunvirato"</h3>
+                    <p>
+                        El Primer Triunvirato de Venezuela (1811-1812) fue un gobierno colegiado formado 
+                        por Cristóbal Mendoza, Juan Escalona y Baltasar Padrón tras la disolución del 
+                        Congreso Constituyente de 1811. Surgió como una medida provisional para dirigir 
+                        la Primera República, en un contexto de crisis política y militar tras la 
+                        Declaración de Independencia. Su mandato terminó con la caída de la República en 
+                        julio de 1812, tras la capitulación de Francisco de Miranda ante las fuerzas 
+                        realistas de Domingo de Monteverde.
+                    </p>
+                    <a href="Personajes.html" class="btn-2">Ver más</a>
+                </div>
+            </div>
+            <!-- Segundo elemento: texto a la izquierda -->
+            <div class="product-row reverse">
+                <div class="product-txt">
+                    <h3 class="titulo-azul">Golpes de estado</h3>
+                    <p>
+                        A lo largo de su historia política, Venezuela ha experimentado varios 
+                        intentos de golpes de Estado, tanto exitosos como fallidos, que han marcado 
+                        su desarrollo institucional. Desde el siglo XIX, con las frecuentes revoluciones 
+                        y caudillismos, hasta el siglo XX y XXI, donde destacan eventos como el 
+                        derrocamiento de Marcos Pérez Jiménez en 1958 o el fallido golpe de 1992 
+                        liderado por Hugo Chávez, estos episodios reflejan las tensiones entre fuerzas 
+                        políticas, militares y sociales.
+                    </p>
+                    <a href="Fechas.html" class="btn-2">Ver más</a>
+                </div>
+                <img src="images/2.jpg" alt="Fechas históricas">
+            </div>
+            <!-- Tercer elemento: texto a la derecha -->
+            <div class="product-row">
+                <img src="images/3.jpg" alt="Presidentes de Venezuela">
+                <div class="product-txt">
+                    <h3 class="titulo-rojo">Presidentes de Venezuela</h3>
+                    <p>
+                        Desde su independencia, Venezuela ha sido dirigida por numerosos mandatarios con distintos enfoques y 
+                        visiones. Desde los primeros caudillos militares como José Antonio Páez, hasta presidentes reformistas 
+                        como Carlos Andrés Pérez, el país ha atravesado épocas de avances, crisis y cambios estructurales. Cada 
+                        administración ha enfrentado desafíos únicos, moldeando el destino de Venezuela a través de decisiones 
+                        políticas y económicas que han impactado a su población y su desarrollo.
+                    </p>
+                    <a href="Presidentes.html" class="btn-2">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="carrusel" id="carrusel">
+        <div class="carrusel-titulo">
+            <h2>Banderas de Venezuela</h2>
+        </div>
+        <div class="carrusel-slider">
+            <input type="radio" name="carrusel" id="slide1" checked>
+            <input type="radio" name="carrusel" id="slide2">
+            <input type="radio" name="carrusel" id="slide3">
+            <input type="radio" name="carrusel" id="slide4">
+            <input type="radio" name="carrusel" id="slide5">
+
+            <div class="carrusel-slides">
+                <div class="carrusel-slide s1">
+                    <img src="images/carru1.jpg" alt="Imagen 1">
+                </div>
+                <div class="carrusel-slide s2">
+                    <img src="images/carru2.jpeg" alt="Imagen 2">
+                </div>
+                <div class="carrusel-slide s3">
+                    <img src="images/carru3.jpg" alt="Imagen 3">
+                </div>
+                <div class="carrusel-slide s4">
+                    <img src="images/carru4.jpg" alt="Imagen 4">
+                </div>
+                <div class="carrusel-slide s5">
+                    <img src="images/carru5.jpg" alt="Imagen 5">
+                </div>
+            </div>
+
+            <div class="carrusel-nav">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+                <label for="slide5"></label>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contacto">
+        <div class="footer-content container">
+            <h2>Contacto</h2>
+            <p class="footer-desc">
+                Si tienes alguna sugerencia para ayudarnos a mejorar nuestra pagina sobre la historia de
+                venezuela, dejanos tu correo electrónico y nos pondremos en contacto contigo para que nos 
+                muestres tus ideas.</p>
+            <form class="footer-form">
+                <input type="email" placeholder="Correo electrónico" required>
+                <button type="submit" class="btn-2">Enviar</button>
+            </form>
+        </div>
+    </footer>
+</body>
+</html>

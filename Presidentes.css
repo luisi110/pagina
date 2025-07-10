@@ -1,0 +1,204 @@
+body {
+    background-image: url(images/fondopresi.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    font-family: 'Poppins', Arial, sans-serif; /* Fuente igual que en Pagina.css */
+}
+
+.titulo-presidentes {
+    text-align: center;
+    margin-top: 50px;
+    color: #ff0000;
+    font-size: 2.5rem;
+    text-shadow:
+        -2px -2px 0 #000,
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000,
+         0px  2px 0 #000,
+         2px  0px 0 #000,
+         0px -2px 0 #000,
+        -2px  0px 0 #000,
+         2px  2px 10px #222; /* Sombra suave adicional */
+    font-family: 'Felix Titling', Arial, sans-serif;
+}
+
+.titulo-dictadores {
+    text-align: center;
+    margin-top: 30px;
+    color: #efb810;
+    font-size: 3.5rem;
+    text-shadow:
+        -2px -2px 0 #000,
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000,
+         0px  2px 0 #000,
+         2px  0px 0 #000,
+         0px -2px 0 #000,
+        -2px  0px 0 #000,
+         2px  2px 10px #222; /* Sombra suave adicional */
+    font-family: 'Felix Titling', Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 10px #222;
+    margin-top: 20px;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0;
+    width: 100%;
+}
+
+.dato-curioso-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 50px 0;
+}
+
+.dato-curioso-img {
+    max-width: 340px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding: 8px;
+    background: none;
+    transition: transform 0.22s cubic-bezier(.4,1.4,.6,1);
+    cursor: pointer;
+    box-shadow: none; /* Quita la sombra */
+}
+
+.dato-curioso-img:hover {
+    transform: scale(1.13);
+    z-index: 2;
+}
+
+.dato-curioso-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 50px 0;
+}
+
+.dato-curioso-img2 {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.dato-curioso-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 50px 0;
+}
+
+.dato-curioso-img3 {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.dato-curioso-container4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 50px 0;
+}
+
+.dato-curioso-img4 {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.datos-curiosos-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    margin: 40px 0 60px 0;
+    flex-wrap: wrap;
+}
+
+.dictadores-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    justify-items: center;
+    margin: 30px auto 50px auto;
+    max-width: 800px;
+}
+
+.dictadores-grid img {
+    max-width: 100%;
+    width: 320px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: none;
+    transition: transform 0.22s cubic-bezier(.4,1.4,.6,1), box-shadow 0.22s;
+    cursor: pointer;
+}
+
+.dictadores-grid img:hover {
+    transform: scale(1.13);
+    z-index: 2;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media screen and (max-width: 900px) {
+    
+    .datos-curiosos-row {
+        flex-direction: column;
+        gap: 18px;
+        align-items: center;
+    }
+    .dato-curioso-img {
+        max-width: 90vw;
+    }
+    .dictadores-grid {
+        grid-template-columns: 1fr;
+        max-width: 98vw;
+    }
+    .dictadores-grid img {
+        width: 90vw;
+        max-width: 98vw;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .dictadores-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  
+    .video-container iframe {
+        width: 98vw;
+        height: 200px;
+    }
+    .dato-curioso-img {
+        max-width: 98vw;
+    }
+    .dictadores-grid img {
+        width: 98vw;
+        max-width: 98vw;
+        height: auto;
+    }
+}

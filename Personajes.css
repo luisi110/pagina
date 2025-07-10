@@ -1,0 +1,175 @@
+body {
+    background-image: url(images/tito13.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.titulo-personajes {
+    text-align: center;
+    margin-top: 50px;
+    color: yellow;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 10px #222;
+    font-family: 'Felix Titling', 'Poppins', Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 10px #222;
+    margin-top: 20px;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.personajes-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.personaje-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.personaje-img {
+    max-width: 370px;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    background: none;
+    transition: transform 0.22s cubic-bezier(.4,1.4,.6,1);
+    cursor: pointer;
+}
+
+.personaje1-img {
+    max-width: 800px;
+    transition: transform 0.22s cubic-bezier(.4,1.4,.6,1);
+    cursor: pointer;
+}
+
+.personaje1-img:hover {
+    transform: scale(1.13);
+    z-index: 2;
+}
+
+.personajes-row2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.personaje-img-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.personaje-img2 {
+    max-width: 370px;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    background: none;
+    transition: transform 0.22s cubic-bezier(.4,1.4,.6,1);
+    cursor: pointer;
+}
+
+.personaje2-img {
+    max-width: 800px;
+    transition: transform 0.22s cubic-bezier(.4,1.4,.6,1);
+    cursor: pointer;
+}
+
+.personaje2-img:hover {
+    transform: scale(1.13);
+    z-index: 2;
+}
+
+.personajes-row3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.personaje-img-container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.personaje-img3 {
+    max-width: 370px;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    background: none;
+    transition: transform 0.22s cubic-bezier(.4,1.4,.6,1);
+    cursor: pointer;
+}
+
+.personaje3-img {
+    max-width: 800px;
+    transition: transform 0.22s cubic-bezier(.4,1.4,.6,1);
+    cursor: pointer;
+}
+
+.personaje3-img:hover {
+    transform: scale(1.13);
+    z-index: 2;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media screen and (max-width: 900px) {
+    .personajes-row,
+    .personajes-row2,
+    .personajes-row3 {
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+    }
+    .personaje-img,
+    .personaje-img2,
+    .personaje-img3,
+    .personaje1-img,
+    .personaje2-img,
+    .personaje3-img {
+        max-width: 90vw !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+   
+    .personaje-img,
+    .personaje-img2,
+    .personaje-img3,
+    .personaje1-img,
+    .personaje2-img,
+    .personaje3-img {
+        max-width: 98vw !important;
+    }
+    .video-container {
+        margin: 30px 0 20px 0;
+    }
+    .video-container iframe {
+        width: 98vw;
+        height: 200px;
+    }
+}
