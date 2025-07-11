@@ -25,6 +25,30 @@ body {
     font-family: 'Felix Titling', 'Poppins', Arial, sans-serif;
 }
 
+.btn-back {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 3px;
+    padding: 13px 35px;
+    background-color: red;
+    color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-weight: 600;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+a.btn-back {
+    text-decoration: none;
+}
+
+.btn-back:hover {
+    transform: scale(1.1);
+     background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+    box-shadow: 0 4px 16px rgba(255,0,0,0.18);
+}
+
 h2 {
     text-align: center;
     color: #ffffff;
