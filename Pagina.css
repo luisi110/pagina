@@ -441,6 +441,7 @@ h2 {
 }
 
 .footer-form {
+    margin-bottom: 60px;
     display: flex;
     justify-content: center;
     gap: 10px;
